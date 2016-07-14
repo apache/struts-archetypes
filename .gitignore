@@ -1,0 +1,24 @@
+# IDEA
+.idea
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+Servers/
+
+#VSCode
+.vscode
+
+# OSX
+.DS_Store
+
+# Scripts
+*.sh
+
+# jenv
+.java-version
