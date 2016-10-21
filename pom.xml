@@ -30,7 +30,7 @@
     </parent>
 
     <artifactId>struts-archetypes</artifactId>
-    <version>2.5.5</version>
+    <version>2.5.3-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Struts 2 Maven Archetypes</name>
 
@@ -61,8 +61,4 @@
         </plugins>
     </build>
 
-
-  <scm>
-    <tag>STRUTS_ARCHETYPES_2_5_5</tag>
-  </scm>
 </project>
