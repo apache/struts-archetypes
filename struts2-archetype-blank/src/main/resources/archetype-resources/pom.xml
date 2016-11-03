@@ -10,7 +10,6 @@
 
     <properties>
         <struts2.version>${project.version}</struts2.version>
-        <log4j2.version>${log4j2.version}</log4j2.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -33,12 +32,6 @@
             <artifactId>struts2-junit-plugin</artifactId>
             <version>\${struts2.version}</version>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>\${log4j2.version}</version>
         </dependency>
 
         <dependency>
