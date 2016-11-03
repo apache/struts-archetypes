@@ -10,13 +10,13 @@
     <name>${artifactId}</name>
 
     <properties>
-    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <struts2.version>${project.version}</struts2.version>
-		<portlet.api.version>2.0</portlet.api.version>
-		<!-- plugins -->
-		<plugin.compiler.version>3.0</plugin.compiler.version>
-		<plugin.war.version>2.3</plugin.war.version>
-		<plugin.pluto.version>2.0.3</plugin.pluto.version>
+        <portlet.api.version>2.0</portlet.api.version>
+        <!-- plugins -->
+        <plugin.compiler.version>3.0</plugin.compiler.version>
+        <plugin.war.version>2.3</plugin.war.version>
+        <plugin.pluto.version>2.0.3</plugin.pluto.version>
     </properties>
 
     <dependencies>
@@ -40,7 +40,7 @@
             <version>${portlet.api.version}</version>
             <scope>provided</scope>
         </dependency>
-      
+
     </dependencies>
 
     <build>
@@ -57,35 +57,35 @@
         </plugins>
     </build>
 
-   <profiles>
-		<profile>
-			<id>pluto-embedded</id>
-			<build>
-				<plugins>
-					<!-- configure maven-war-plugin to use updated web.xml -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-war-plugin</artifactId>
-						<version>${plugin.war.version}</version>
-						<configuration>
-							<webXml>${project.build.directory}/pluto-resources/web.xml</webXml>
-						</configuration>
-					</plugin>
-					<!-- bind 'pluto2:assemble' goal to 'generate-resources' lifecycle -->
-					<plugin>
-						<groupId>org.apache.portals.pluto</groupId>
-						<artifactId>maven-pluto-plugin</artifactId>
-						<version>${plugin.pluto.version}</version>
-						<executions>
-							<execution>
-								<goals>
-									<goal>assemble</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
+    <profiles>
+        <profile>
+            <id>pluto-embedded</id>
+            <build>
+                <plugins>
+                    <!-- configure maven-war-plugin to use updated web.xml -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-war-plugin</artifactId>
+                        <version>${plugin.war.version}</version>
+                        <configuration>
+                            <webXml>${project.build.directory}/pluto-resources/web.xml</webXml>
+                        </configuration>
+                    </plugin>
+                    <!-- bind 'pluto2:assemble' goal to 'generate-resources' lifecycle -->
+                    <plugin>
+                        <groupId>org.apache.portals.pluto</groupId>
+                        <artifactId>maven-pluto-plugin</artifactId>
+                        <version>${plugin.pluto.version}</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>assemble</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

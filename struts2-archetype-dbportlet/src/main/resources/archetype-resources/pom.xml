@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project>
-	<modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
     <groupId>\${groupId}</groupId>
     <artifactId>\${artifactId}</artifactId>
     <version>\${version}</version>
     <packaging>war</packaging>
     <name>\${artifactId}</name>
-	<url>http://www.myComp.com</url>
-	<description>Struts 2 Database Portlet</description>
+    <url>http://www.myComp.com</url>
+    <description>Struts 2 Database Portlet</description>
 
     <properties>
         <struts2.version>${project.version}</struts2.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>    
+    </properties>
 
-	<dependencies>
+    <dependencies>
 
-		<!-- Junit -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
+        <!-- Junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
 
-		<!--  Struts 2 -->
-		<dependency>
+        <!--  Struts 2 -->
+        <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-core</artifactId>
             <version>\${struts2.version}</version>
         </dependency>
 
-		<dependency>
+        <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-portlet-plugin</artifactId>
             <version>\${struts2.version}</version>
@@ -49,11 +49,11 @@
             <artifactId>struts2-spring-plugin</artifactId>
             <version>\${struts2.version}</version>
         </dependency>
-		
+
         <dependency>
-          <groupId>org.apache.struts</groupId>
-          <artifactId>struts2-config-browser-plugin</artifactId>
-          <version>\${struts2.version}</version>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-config-browser-plugin</artifactId>
+            <version>\${struts2.version}</version>
         </dependency>
 
         <!-- Spring -->
@@ -64,13 +64,13 @@
         </dependency>
 
         <!-- Database driver (change for your specific database) -->
-         <dependency>
+        <dependency>
             <groupId>hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <version>1.8.0.7</version>
         </dependency>
 
-		<!-- Servlet, Jsp, and Portlet API's -->
+        <!-- Servlet, Jsp, and Portlet API's -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -93,21 +93,21 @@
         </dependency>
 
     </dependencies>
-    	
+
     <build>
-      <finalName>${artifactId}</finalName>
-    	<plugins>
-    		<plugin>
+        <finalName>${artifactId}</finalName>
+        <plugins>
+            <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                   <source>1.5</source>
-                   <target>1.5</target>
+                    <source>1.5</source>
+                    <target>1.5</target>
                 </configuration>
             </plugin>
-    		<plugin>
-    			<groupId>org.mortbay.jetty</groupId>
-    			<artifactId>maven-jetty-plugin</artifactId>
-    			<version>6.1.21</version>
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>maven-jetty-plugin</artifactId>
+                <version>6.1.21</version>
                 <configuration>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <scanTargets>
@@ -123,7 +123,7 @@
                         <version>2.0</version>
                     </dependency>
                 </dependencies>
-    		</plugin>
-    	</plugins>
+            </plugin>
+        </plugins>
     </build>
 </project>
