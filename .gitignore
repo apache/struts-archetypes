@@ -22,3 +22,6 @@ Servers/
 
 # jenv
 .java-version
+
+# Maven
+target
