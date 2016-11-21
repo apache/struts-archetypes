@@ -35,7 +35,7 @@ public class LoginTest extends ConfigTest {
     }
 
     public void testLoginSubmit() throws Exception {
-        Login login = new Login();
+        Login login = container.inject(Login.class);
         login.setUsername("username");
         login.setPassword("password");
         String result = login.execute();
@@ -44,7 +44,7 @@ public class LoginTest extends ConfigTest {
 
     // Needs access to an envinronment that includes validators
     public void FIXME_testLoginSubmitInput() throws Exception {
-        Login login = new Login();
+        Login login = container.inject(Login.class);
         String result = login.execute();
         assertInput(result);
         Map errors = assertFieldErrors(login);
