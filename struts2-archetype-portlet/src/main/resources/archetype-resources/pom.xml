@@ -14,7 +14,7 @@
         <struts2.version>${supported.struts2.version}</struts2.version>
         <portlet.api.version>2.0</portlet.api.version>
         <!-- plugins -->
-        <plugin.compiler.version>3.0</plugin.compiler.version>
+        <plugin.compiler.version>3.6.1</plugin.compiler.version>
         <plugin.war.version>2.3</plugin.war.version>
         <plugin.pluto.version>2.0.3</plugin.pluto.version>
     </properties>
