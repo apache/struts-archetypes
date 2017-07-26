@@ -86,7 +86,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <supported.struts2.version>2.5.5</supported.struts2.version>
+        <supported.struts2.version>2.5.12</supported.struts2.version>
     </properties>
 
     <build>
