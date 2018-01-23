@@ -36,9 +36,9 @@
     <name>Struts 2 Maven Archetypes</name>
 
     <scm>
-        <connection>scm:git:git://git.apache.org/struts-archetypes.git</connection>
-        <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/struts-archetypes.git</developerConnection>
-        <url>http://git.apache.org/struts-archetypes.git</url>
+        <connection>scm:git:https://gitbox.apache.org/struts-archetypes.git</connection>
+        <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/struts-archetypes.git</developerConnection>
+        <url>https://github.com/apache/struts-archetypes.git</url>
         <tag>HEAD</tag>
     </scm>
 
