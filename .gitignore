@@ -25,3 +25,5 @@ Servers/
 
 # Maven
 target
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
