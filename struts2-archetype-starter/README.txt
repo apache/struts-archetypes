@@ -1,8 +1,9 @@
 INFORMATION
 ===========
-- This is Struts 2's "Starter" Maven Archetype
-- To be used to create a simple webapp template that one could alter to meet his/her needs.
-- The created template contains
+This is Struts 2's "Starter" Maven Archetype, to be used to create a simple webapp template that one could alter
+to meet their needs.
+
+The created template contains
   - sitemesh integration
   - a simple Struts action
   - a simple Struts action level validation
@@ -26,18 +27,16 @@ USAGE
 
     - the webapp war name   ->  myWebApp
 
-
-mvn archetype:generate -B -DgroupId=com.mycompany.mysystem \
+  mvn archetype:generate -B -DgroupId=com.mycompany.mysystem \
 							-DartifactId=myWebApp \
 							-DarchetypeGroupId=org.apache.struts \
 							-DarchetypeArtifactId=struts2-archetype-starter \
 							-DarchetypeVersion=<CURRENT_STRUTS_VERSION> \
 							-DremoteRepositories=http://struts.apache.org
 
-For more details about the Struts2 archetypes, please take a look at our Wiki page.
+For more details about the Struts2 archetypes, please take a look at our page.
 
--> https://cwiki.apache.org/confluence/display/WW/Struts+2+Maven+Archetypes
-
+-> https://struts.apache.org/maven-archetypes/
 
 COMMON TASKS
 ==========
