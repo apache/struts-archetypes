@@ -30,7 +30,7 @@
     </parent>
 
     <artifactId>struts-archetypes</artifactId>
-    <version>2.5.15-SNAPSHOT</version>
+    <version>2.5.20</version>
     <packaging>pom</packaging>
     <name>Struts 2 Maven Archetypes</name>
 
@@ -38,7 +38,7 @@
         <connection>scm:git:https://gitbox.apache.org/struts-archetypes.git</connection>
         <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/struts-archetypes.git</developerConnection>
         <url>https://github.com/apache/struts-archetypes.git</url>
-        <tag>HEAD</tag>
+        <tag>STRUTS_ARCHETYPES_2_5_20</tag>
     </scm>
 
     <issueManagement>
