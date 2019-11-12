@@ -10,7 +10,7 @@
     <artifactId>struts2-archetype-plugin</artifactId>
     <packaging>maven-archetype</packaging>
     <name>Struts 2 Archetypes - Plugin</name>
-    <description>This is Struts 2's "Plugin" Maven Archetype</description>
+    <description>Struts 2's Basic Plugin Archetype</description>
 
     <properties>
         <maven.test.skip>true</maven.test.skip>

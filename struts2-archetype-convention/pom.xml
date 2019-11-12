@@ -9,7 +9,7 @@
     <artifactId>struts2-archetype-convention</artifactId>
     <packaging>maven-archetype</packaging>
     <name>Struts 2 Archetypes - Blank Convention</name>
-    <description>This is Struts 2's "Blank Convention" Maven Archetype</description>
+    <description>Struts 2's Blank Convention based App Archetype</description>
 
     <properties>
         <maven.test.skip>true</maven.test.skip>

@@ -9,10 +9,7 @@
     <artifactId>struts2-archetype-portlet</artifactId>
     <packaging>maven-archetype</packaging>
     <name>Struts 2 Archetypes - Portlet</name>
-    <description>
-        This is Struts 2's "Portlet" Maven Archetype, to be used to create a simple portlet that
-        can be deployed as JSR286 portlet. There is a maven profile in order to test this portlet on Pluto Portal.
-    </description>
+    <description>Struts 2's Portlet Archetype, which can be deployed as JSR286 portlet</description>
 
     <properties>
         <maven.test.skip>true</maven.test.skip>

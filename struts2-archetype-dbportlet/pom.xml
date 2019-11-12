@@ -9,10 +9,7 @@
     <artifactId>struts2-archetype-dbportlet</artifactId>
     <packaging>maven-archetype</packaging>
     <name>Struts 2 Archetypes - Database Portlet</name>
-    <description>
-        This is Struts 2's "Database Portlet" Maven Archetype, to be used to create a simple portlet that displays
-        information in a database and can be deployed as a webapp or JSR168 portlet.
-    </description>
+    <description> Struts 2's Database Portlet Archetype, which can be deployed as a webapp or JSR168 portlet</description>
 
     <properties>
         <maven.test.skip>true</maven.test.skip>

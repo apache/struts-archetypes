@@ -11,10 +11,7 @@
     <artifactId>struts2-archetype-starter</artifactId>
     <packaging>maven-archetype</packaging>
     <name>Struts 2 Archetypes - Starter</name>
-    <description>
-        This is Struts 2's "Starter" Maven Archetype, to be used to create a simple webapp template that one could alter
-        to meet their needs.
-    </description>
+    <description>Struts 2's Starter App Archetype</description>
 
     <properties>
         <maven.test.skip>true</maven.test.skip>
