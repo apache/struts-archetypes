@@ -121,15 +121,15 @@
     </build>
 
     <!-- Remove once maven-archetype-plugin get released-->
-    <repositories>
-        <repository>
+    <pluginRepositories>
+        <pluginRepository>
             <id>apache-snapshots</id>
             <url>https://repository.apache.org/content/groups/snapshots/</url>
             <layout>default</layout>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </repository>
-    </repositories>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>
