@@ -5,6 +5,6 @@ application.
 
 For more on getting started with Struts, see 
 
-* http://cwiki.apache.org/WW/home.html
+* https://struts.apache.org/
 
 ----------------------------------------------------------------------------

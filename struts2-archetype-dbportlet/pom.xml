@@ -7,8 +7,9 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>struts2-archetype-dbportlet</artifactId>
-    <packaging>jar</packaging>
+    <packaging>maven-archetype</packaging>
     <name>Struts 2 Archetypes - Database Portlet</name>
+    <description> Struts 2's Database Portlet Archetype, which can be deployed as a webapp or JSR168 portlet</description>
 
     <properties>
         <maven.test.skip>true</maven.test.skip>
@@ -24,63 +25,14 @@
                     <include>**/*.*</include>
                 </includes>
             </resource>
-            <resource>
-                <directory>src/main/resources/archetype-resources/src</directory>
-                <filtering>false</filtering>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </resource>
         </resources>
 
         <extensions>
             <extension>
                 <groupId>org.apache.maven.archetype</groupId>
                 <artifactId>archetype-packaging</artifactId>
-                <version>2.0</version>
+                <version>3.1.2</version>
             </extension>
         </extensions>
-
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-resources-plugin</artifactId>
-                    <version>2.5</version>
-                    <configuration>
-                        <escapeString>\</escapeString>
-                        <encoding>UTF-8</encoding>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-archetype-plugin</artifactId>
-                    <version>2.0</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
-
-    <profiles>
-        <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
-
 </project>

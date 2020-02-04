@@ -1,8 +1,7 @@
 INFORMATION
 ===========
-- This is Struts 2's "Database Portlet" Maven Archetype
-- To be used to create a simple portlet that displays information in a database and can be deployed as a webapp or JSR168 portlet.
- 
+This is Struts 2's "Database Portlet" Maven Archetype, to be used to create a simple portlet that displays
+information in a database and can be deployed as a webapp or JSR168 portlet.
 
 USAGE
 =====
@@ -25,9 +24,9 @@ mvn archetype:generate -B -DgroupId=com.mycompany.mysystem \
 							-DarchetypeVersion=<CURRENT_STRUTS_VERSION> \
 							-DremoteRepositories=http://struts.apache.org
 
-For more details about the Struts2 archetypes, please take a look at our Wiki page.
+For more details about the Struts2 archetypes, please take a look at our page.
 
--> https://cwiki.apache.org/confluence/display/WW/Struts+2+Maven+Archetypes
+-> https://struts.apache.org/maven-archetypes/
 
 
 - to compile, execute

@@ -1,6 +1,6 @@
 INFORMATION
 ===========
-- This is Struts 2's "HTML5 AngularJS" Maven Archetype
+This is Struts 2's "HTML5 AngularJS" Maven Archetype
 
 USAGE
 =====
@@ -15,19 +15,16 @@ USAGE
 
     - the webapp war name   ->  myWebApp
 
-
-mvn archetype:generate -B -DgroupId=com.mycompany.mysystem \
+  mvn archetype:generate -B -DgroupId=com.mycompany.mysystem \
 							-DartifactId=myWebApp \
 							-DarchetypeGroupId=org.apache.struts \
 							-DarchetypeArtifactId=struts2-archetype-angularjs \
 							-DarchetypeVersion=<CURRENT_STRUTS_VERSION> \
 							-DremoteRepositories=http://struts.apache.org
 
+For more details about the Struts2 archetypes, please take a look at our page.
 
-For more details about the Struts2 archetypes, please take a look at our Wiki page.
-
--> https://cwiki.apache.org/confluence/display/WW/Struts+2+Maven+Archetypes
-
+-> https://struts.apache.org/maven-archetypes/
 
 IMPORTANT:
 ==========
