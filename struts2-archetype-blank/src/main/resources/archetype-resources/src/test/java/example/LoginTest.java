@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -21,17 +19,19 @@
 
 package ${package}.example;
 
+import com.opensymphony.xwork2.ActionProxy;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.config.entities.ActionConfig;
 
+import java.util.List;
 import java.util.Map;
 
 public class LoginTest extends ConfigTest {
 
-    public void FIXME_testLoginConfig() throws Exception {
-        ActionConfig config = assertClass("example", "Login_input", "example.Login");
+    public void testLoginConfig() {
+        ActionConfig config = assertClass("/example", "Login_input", "${package}.Login");
         assertResult(config, ActionSupport.SUCCESS, "Menu");
-        assertResult(config, ActionSupport.INPUT, "/example/Login.jsp");
+        assertResult(config, ActionSupport.INPUT, "/WEB-INF/example/Login.jsp");
     }
 
     public void testLoginSubmit() throws Exception {
@@ -42,14 +42,18 @@ public class LoginTest extends ConfigTest {
         assertSuccess(result);
     }
 
-    // Needs access to an envinronment that includes validators
-    public void FIXME_testLoginSubmitInput() throws Exception {
-        Login login = container.inject(Login.class);
-        String result = login.execute();
+    public void testLoginSubmitInput() throws Exception {
+        // given
+        ActionProxy proxy = getActionProxy("/example/Login");
+
+        // when
+        String result = proxy.execute();
+
+        // then
         assertInput(result);
-        Map errors = assertFieldErrors(login);
-        assertFieldError(errors,"username","Username is required.");
-        assertFieldError(errors,"password","Password is required.");
+        Map<String, List<String>> errors = assertFieldErrors((ActionSupport) proxy.getAction());
+        assertFieldError(errors, "username", "User Name is required.");
+        assertFieldError(errors, "password", "Password is required.");
     }
 
 }

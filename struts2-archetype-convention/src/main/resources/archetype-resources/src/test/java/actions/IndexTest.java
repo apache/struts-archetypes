@@ -5,10 +5,11 @@ import org.apache.struts2.StrutsTestCase;
 
 public class IndexTest extends StrutsTestCase {
 
-    public void testIndex() throws Exception {
+    public void testIndex() {
         Index index = new Index();
         String result = index.execute();
-        assertTrue("Expected a success result!", ActionSupport.SUCCESS.equals(result));
-        assertTrue("Expected the 'hello' action name!!", "hello".equals(index.getRedirectName()));
+        assertEquals("Expected a success result!", ActionSupport.SUCCESS, result);
+        assertEquals("Expected the 'hello' action name!!", "hello", index.getRedirectName());
     }
+
 }

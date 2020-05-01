@@ -23,9 +23,6 @@ import java.util.Map;
 import java.util.Date;
 import com.opensymphony.xwork2.conversion.TypeConversionException;
 
-/**
- * 
- */
 public class DateConverter extends StrutsTypeConverter {
     public Object convertFromString(Map context, String[] values, Class toClass) {
         if (values != null && values.length > 0 && values[0] != null && values[0].length() > 0) {

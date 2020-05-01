@@ -7,13 +7,12 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class HelloActionTest extends StrutsTestCase {
 
-    public void testHelloAction() throws Exception {
+    public void testHelloAction() {
         HelloAction hello = new HelloAction();
         ActionContext.getContext().getContainer().inject(hello);
         String result = hello.execute();
-        assertTrue("Expected a success result!",
-                ActionSupport.SUCCESS.equals(result));
-        assertTrue("Expected the default message!",
-                hello.getText(HelloAction.MESSAGE).equals(hello.getMessage()));
+        assertEquals("Expected a success result!", ActionSupport.SUCCESS, result);
+        assertEquals("Expected the default message!", hello.getText(HelloAction.MESSAGE), hello.getMessage());
     }
+
 }

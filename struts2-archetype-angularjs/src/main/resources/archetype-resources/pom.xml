@@ -10,6 +10,7 @@
 
     <properties>
         <struts2.version>${supported.struts2.version}</struts2.version>
+        <log4j2.version>2.12.1</log4j2.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -25,6 +26,18 @@
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-convention-plugin</artifactId>
             <version>\${struts2.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.version}</version>
         </dependency>
 
         <dependency>

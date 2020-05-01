@@ -23,7 +23,6 @@ import com.opensymphony.xwork2.validator.annotations.RequiredFieldValidator;
 import com.opensymphony.xwork2.conversion.annotations.Conversion;
 import com.opensymphony.xwork2.conversion.annotations.TypeConversion;
 
-@Validation()
 @Conversion()
 public class HelloWorldAction extends ActionSupport {
     

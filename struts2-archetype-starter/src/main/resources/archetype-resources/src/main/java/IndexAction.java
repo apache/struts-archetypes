@@ -20,9 +20,6 @@ import java.util.Date;
 import com.opensymphony.xwork2.conversion.annotations.Conversion;
 import com.opensymphony.xwork2.conversion.annotations.TypeConversion;
 
-/**
- * 
- */
 @Conversion()
 public class IndexAction extends ActionSupport {
     

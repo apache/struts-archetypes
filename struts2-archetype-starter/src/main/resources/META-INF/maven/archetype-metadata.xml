@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archetype-descriptor name="struts2-archetype-starter">
+<archetype-descriptor name="struts2-archetype-convention">
+
     <fileSets>
         <fileSet filtered="true" packaged="true">
             <directory>src/main/java</directory>
@@ -15,17 +16,11 @@
             </includes>
         </fileSet>
 
-        <fileSet filtered="false" packaged="false">
-            <directory>src/main/resources</directory>
-            <includes>
-                <include>**/*.properties</include>
-            </includes>
-        </fileSet>
-
         <fileSet filtered="true" packaged="false">
             <directory>src/main/resources</directory>
             <includes>
-                <include>**/struts.xml</include>
+                <include>**/*.xml</include>
+                <include>**/*.properties</include>
             </includes>
         </fileSet>
 
@@ -33,21 +28,16 @@
             <directory>src/main/webapp</directory>
             <includes>
                 <include>**/*.jsp</include>
+                <include>**/*.css</include>
             </includes>
         </fileSet>
 
-        <fileSet filtered="false" packaged="false">
-            <directory>src/main/webapp</directory>
-            <includes>
-                <include>**/index.html</include>
-            </includes>
-        </fileSet>
-
-        <fileSet filtered="false" packaged="false">
+        <fileSet filtered="true" packaged="false">
             <directory>src/main/webapp/WEB-INF</directory>
             <includes>
                 <include>**/*.xml</include>
             </includes>
         </fileSet>
     </fileSets>
+
 </archetype-descriptor>

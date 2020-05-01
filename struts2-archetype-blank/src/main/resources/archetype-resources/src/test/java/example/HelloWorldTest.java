@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -28,12 +26,11 @@ import org.apache.struts2.StrutsTestCase;
 public class HelloWorldTest extends StrutsTestCase {
 
     public void testHelloWorld() throws Exception {
-        HelloWorld hello_world = container.inject(HelloWorld.class);
-        ActionContext.getContext().getContainer().inject(hello_world);
-        String result = hello_world.execute();
-        assertTrue("Expected a success result!",
-                ActionSupport.SUCCESS.equals(result));
-        assertTrue("Expected the default message!",
-                hello_world.getText(HelloWorld.MESSAGE).equals(hello_world.getMessage()));
+        HelloWorld helloWorld = container.inject(HelloWorld.class);
+        ActionContext.getContext().getContainer().inject(helloWorld);
+        String result = helloWorld.execute();
+        assertEquals("Expected a success result!", ActionSupport.SUCCESS, result);
+        assertEquals("Expected the default message!", helloWorld.getText(HelloWorld.MESSAGE), helloWorld.getMessage());
     }
+
 }

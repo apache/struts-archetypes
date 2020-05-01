@@ -5,6 +5,7 @@
 
 <struts>
 
+    <constant name="struts.devMode" value="true"/>
     <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
 
     <package name="myPackage" extends="struts-default">
@@ -16,7 +17,7 @@
         </action>
 
         <action name="helloWorld" class="helloWorldAction">
-            <result name="input">/jsp/index.jsp</result>
+            <result name="input">/WEB-INF/jsp/index.jsp</result>
             <result>/WEB-INF/jsp/helloWorld.jsp</result>
         </action>
 

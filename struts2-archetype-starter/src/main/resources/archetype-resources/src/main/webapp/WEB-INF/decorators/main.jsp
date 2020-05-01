@@ -11,19 +11,6 @@
 <head>
 	<title><decorator:title default="Struts Starter"/></title>
     <link href="<s:url value='/styles/main.css'/>" rel="stylesheet" type="text/css" media="all"/>
-    <link href="<s:url value='/struts/niftycorners/niftyCorners.css'/>" rel="stylesheet" type="text/css"/>
-    <link href="<s:url value='/struts/niftycorners/niftyPrint.css'/>" rel="stylesheet" type="text/css" media="print"/>
-    <script language="JavaScript" type="text/javascript" src="<s:url value='/struts/niftycorners/nifty.js'/>"></script>
-	<script language="JavaScript" type="text/javascript">
-        window.onload = function(){
-            if(!NiftyCheck()) {
-                return;
-            }
-            // perform niftycorners rounding
-            // eg.
-            // Rounded("blockquote","tr bl","#ECF1F9","#CDFFAA","smooth border #88D84F");
-        }
-    </script>
     <decorator:head/>
 </head>
 <body id="page-home">
