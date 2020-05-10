@@ -1,7 +1,7 @@
 package ${package}.view;
 
 import org.apache.struts2.dispatcher.DefaultActionSupport;
-import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
 import java.util.Map;
@@ -22,7 +22,7 @@ public class IndexAction extends DefaultActionSupport {
 
         // Initializes the in-memory database (not necessary in production)
         if (!initialized) {
-            SimpleJdbcTemplate jt = new SimpleJdbcTemplate(ds);
+            JdbcTemplate jt = new JdbcTemplate(ds);
             jt.update("CREATE TABLE sample_table ( id INTEGER IDENTITY, str_col VARCHAR(256), num_col INTEGER)");
             jt.update("INSERT INTO sample_table(str_col,num_col) VALUES('Ford', 100)");
             jt.update("INSERT INTO sample_table(str_col,num_col) VALUES('Toyota', 200)");
@@ -37,7 +37,7 @@ public class IndexAction extends DefaultActionSupport {
         // Only refresh the data every minute as needed
         long now = System.currentTimeMillis();
         if (lastLoaded + CACHE_TIME < now) {
-            SimpleJdbcTemplate jt = new SimpleJdbcTemplate(ds);
+            JdbcTemplate jt = new JdbcTemplate(ds);
             data = jt.queryForList("SELECT * FROM sample_table");
             lastLoaded = now;
         }

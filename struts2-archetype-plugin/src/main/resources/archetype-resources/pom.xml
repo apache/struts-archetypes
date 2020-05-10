@@ -9,12 +9,17 @@
     <packaging>jar</packaging>
     <name>\${artifactId}</name>
 
+    <properties>
+        <struts2.version>${supported.struts2.version}</struts2.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <dependencies>
 
         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-core</artifactId>
-            <version>${project.version}</version>
+            <version>\${struts2.version}</version>
         </dependency>
 
         <dependency>
@@ -48,7 +53,4 @@
         </plugins>
     </build>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 </project>

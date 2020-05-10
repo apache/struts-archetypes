@@ -11,7 +11,7 @@
 
 	<include file="struts-portlet-default.xml" />
 
-    <package name="${artifactId}-package" extends="struts-portlet-default" namespace="/">
+    <package name="\${artifactId}-package" extends="struts-portlet-default" namespace="/">
         <action name="*">
             <result type="redirectAction">
                 <param name="actionName">index</param>
