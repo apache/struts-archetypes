@@ -7,7 +7,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class HelloActionTest extends StrutsTestCase {
 
-    public void testHelloAction() {
+    public void testHelloAction() throws Exception {
         HelloAction hello = new HelloAction();
         ActionContext.getContext().getContainer().inject(hello);
         String result = hello.execute();

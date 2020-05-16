@@ -29,7 +29,7 @@ import java.util.Map;
 public class LoginTest extends ConfigTest {
 
     public void testLoginConfig() {
-        ActionConfig config = assertClass("/example", "Login_input", "${package}.Login");
+        ActionConfig config = assertClass("/example", "Login_input", "${package}.example.Login");
         assertResult(config, ActionSupport.SUCCESS, "Menu");
         assertResult(config, ActionSupport.INPUT, "/WEB-INF/example/Login.jsp");
     }

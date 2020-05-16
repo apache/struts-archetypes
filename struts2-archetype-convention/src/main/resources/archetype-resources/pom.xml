@@ -61,6 +61,14 @@
         </dependency>
 
         <dependency>
+            <!-- Needed for tests to run under JDK11 (works without it in JDK8).  Why?  That is still unclear. -->
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-compress</artifactId>
+            <version>1.20</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>

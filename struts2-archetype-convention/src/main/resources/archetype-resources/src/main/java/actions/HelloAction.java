@@ -13,7 +13,7 @@ public class HelloAction extends ActionSupport {
     }
 
     /**
-     * Provide default valuie for Message property.
+     * Provide default value for Message property.
      */
     public static final String MESSAGE = "hello.message";
 
