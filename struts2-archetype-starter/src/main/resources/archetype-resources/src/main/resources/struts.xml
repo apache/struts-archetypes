@@ -16,7 +16,7 @@
             <result>/WEB-INF/jsp/index.jsp</result>
         </action>
 
-        <action name="helloWorld" class="helloWorldAction">
+        <action name="helloWorld" class="${package}.HelloWorldAction">
             <result name="input">/WEB-INF/jsp/index.jsp</result>
             <result>/WEB-INF/jsp/helloWorld.jsp</result>
         </action>
