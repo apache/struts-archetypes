@@ -3,6 +3,6 @@
 
 <beans>
     <!-- Example of Struts action instantiated by Spring -->
-    <bean id="helloWorldAction" class="com.demo.HelloWorldAction" scope="prototype"/>
+    <bean id="helloWorldAction" class="${package}.HelloWorldAction" scope="prototype"/>
 </beans>
 
