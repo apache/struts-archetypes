@@ -30,8 +30,8 @@ pipeline {
         label 'ubuntu'
       }
       tools {
-        jdk 'JDK 1.8 (latest)'
-        maven 'Maven (latest)'
+        jdk 'jdk_1.8_latest'
+        maven 'maven_3_latest'
       }
       environment {
         MAVEN_OPTS = "-Xmx1024m"
