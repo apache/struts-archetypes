@@ -92,13 +92,14 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.4.46.v20220331</version>
+                <version>${supported.jetty.version}</version>
                 <configuration>
                     <stopKey>CTRL+C</stopKey>
                     <stopPort>8999</stopPort>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webAppSourceDirectory>\${basedir}/src/main/webapp/</webAppSourceDirectory>
                     <webAppConfig>
+                        <contextPath>/\${artifactId}</contextPath>
                         <descriptor>\${basedir}/src/main/webapp/WEB-INF/web.xml</descriptor>
                     </webAppConfig>
                 </configuration>
