@@ -9,9 +9,12 @@
     <name>\${artifactId}</name>
 
     <properties>
-        <struts2.version>${supported.struts2.version}</struts2.version>
-        <log4j2.version>2.12.1</log4j2.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <struts2.version>${supported.struts2.version}</struts2.version>
+        <log4j2.version>${supported.log4j.version}</log4j2.version>
     </properties>
 
     <dependencies>
@@ -76,37 +79,27 @@
         </dependency>
 
         <dependency>
-            <groupId>javax.servlet</groupId>
+            <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
-            <version>2.0</version>
+            <version>2.1</version>
             <scope>provided</scope>
         </dependency>
-
 
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.2</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-            <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.4.22.v20191022</version>
+                <version>${supported.jetty.version}</version>
                 <configuration>
                     <stopKey>CTRL+C</stopKey>
                     <stopPort>8999</stopPort>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webAppSourceDirectory>\${basedir}/src/main/webapp/</webAppSourceDirectory>
                     <webAppConfig>
+                        <contextPath>/\${artifactId}</contextPath>
                         <descriptor>\${basedir}/src/main/webapp/WEB-INF/web.xml</descriptor>
                     </webAppConfig>
                 </configuration>

@@ -11,10 +11,12 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
         <struts2.version>${supported.struts2.version}</struts2.version>
         <portlet.api.version>2.0</portlet.api.version>
         <!-- plugins -->
-        <plugin.compiler.version>3.6.2</plugin.compiler.version>
         <plugin.war.version>2.3</plugin.war.version>
         <plugin.pluto.version>2.0.3</plugin.pluto.version>
     </properties>
@@ -42,20 +44,6 @@
         </dependency>
 
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>\${plugin.compiler.version}</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
     <profiles>
         <profile>
