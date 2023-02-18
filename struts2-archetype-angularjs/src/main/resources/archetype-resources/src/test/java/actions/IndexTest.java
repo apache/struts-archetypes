@@ -19,7 +19,7 @@
 package ${package}.actions;
 
 import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.StrutsRestTestCase;
+import org.apache.struts2.junit.StrutsRestTestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
