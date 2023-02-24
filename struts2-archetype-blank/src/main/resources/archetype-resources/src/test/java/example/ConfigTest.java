@@ -16,20 +16,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
 package ${package}.example;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.config.RuntimeConfiguration;
 import com.opensymphony.xwork2.config.entities.ActionConfig;
 import com.opensymphony.xwork2.config.entities.ResultConfig;
-import com.opensymphony.xwork2.config.providers.XmlConfigurationProvider;
-import org.apache.struts2.StrutsTestCase;
+import org.apache.struts2.config.StrutsXmlConfigurationProvider;
+import org.apache.struts2.junit.StrutsTestCase;
 
 import java.util.List;
 import java.util.Map;
-
-import org.apache.struts2.StrutsTestCase;
 
 public class ConfigTest extends StrutsTestCase {
 
@@ -56,7 +53,7 @@ public class ConfigTest extends StrutsTestCase {
 
     protected void setUp() throws Exception {
         super.setUp();
-        XmlConfigurationProvider c = new XmlConfigurationProvider("struts.xml");
+        XmlConfigurationProvider c = new StrutsXmlConfigurationProvider("struts.xml");
         configurationManager.addContainerProvider(c);
         configurationManager.reload();
     }

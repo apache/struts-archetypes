@@ -16,12 +16,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
 package ${package}.example;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.StrutsTestCase;
+import org.apache.struts2.junit.StrutsTestCase;
 
 public class HelloWorldTest extends StrutsTestCase {
 
