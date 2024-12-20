@@ -87,7 +87,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <supported.struts2.version>6.1.1</supported.struts2.version>
+        <supported.struts2.version>6.4.0</supported.struts2.version>
         <supported.log4j.version>2.19.0</supported.log4j.version>
         <supported.jetty.version>9.4.46.v20220331</supported.jetty.version>
     </properties>
