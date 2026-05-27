@@ -67,7 +67,7 @@
             <!-- Needed for tests to run under JDK11 (works without it in JDK8).  Why?  That is still unclear. -->
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-compress</artifactId>
-            <version>1.21</version>
+            <version>1.26.0</version>
             <scope>test</scope>
         </dependency>
 
